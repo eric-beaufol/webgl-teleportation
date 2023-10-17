@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow: hidden;
+  background: yellow;
+  height: 100%;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.cities {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  background: #0d1721;
+  z-index: 2;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.cities li {
+  padding: 10px 20px;
+  font-family: sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.cities li:hover {
+  color: rgba(255, 255, 255, .7);
+}
+
+.cities li:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, .4);
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
